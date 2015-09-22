@@ -37,13 +37,22 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
   padding-top:3em;
 }
 .hero {
-  background: url(images/hero-background.jpg) no-repeat center center;
+  background: no-repeat center center;/*url(images/hero-background.jpg) */
   background-size: cover;
   height: 100vh;
   overflow: hidden;
   margin-bottom: 25px;
 }
-.hero p {
+.hero .row {
+  height: 100%;
+  display: table;
+}
+.hero .row p {
+  color: #fff;
+  font-size: 2em;
+}
+  
+/*.hero p {
   color: #fff;
   font-size: 2em;
   text-align: center;
@@ -52,4 +61,14 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); 
+}
+*/
+.hero .row .columns {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero .row .columns,
+.hero .row [class*="column"] + [class*="column"]:last-child {
+    float: none;
 }
