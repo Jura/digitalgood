@@ -18,14 +18,13 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
   text-align:right;
   padding-right: 15px;
 }
-
 .top-bar .toggle-topbar.menu-icon a span::after {
  box-shadow: 0 0 0 1px #000,0 7px 0 1px #000,0 14px 0 1px #000;
 }
 .top-bar-section ul li:hover>a,.top-bar-section ul li.active>a {
-    background: #2ba6cb !important;
+    background: #e3e3e3 !important;
 }
-  
+
 /* parallax */
 .parallax-window {
     min-height: 400px;
