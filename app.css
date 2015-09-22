@@ -1,0 +1,50 @@
+/* general typography */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Cabin);
+body{font-family:'PT Sans',sans-serif;}
+h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
+
+/* navigation bar */
+.contain-to-grid {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+}
+.contain-to-grid, .top-bar, .top-bar-section li a, .top-bar.expanded .title-area {
+  background: #fff !important;
+}
+.top-bar-section ul li>a, .top-bar-section ul li:hover>a {
+  color: #000 !important;
+  text-transform: uppercase;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+ box-shadow: 0 0 0 1px #000,0 7px 0 1px #000,0 14px 0 1px #000;
+}
+.top-bar-section ul li:hover>a,.top-bar-section ul li.active>a {
+    background: #2ba6cb !important;
+}
+  
+/* parallax */
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.full-row {
+  background: #fff;
+  width: 100%;
+  padding-top:3em;
+}
+.hero {
+  background: url(images/hero-background.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.hero p {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
