@@ -31,11 +31,14 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
     min-height: 400px;
     background: transparent;
 }
+
 .full-row {
   background: #fff;
   width: 100%;
   padding-top:3em;
 }
+
+/* First slide styling */
 .hero {
   background: no-repeat center center;/*url(images/hero-background.jpg) */
   background-size: cover;
@@ -47,28 +50,24 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
   height: 100%;
   display: table;
 }
-.hero .row p {
+.hero p {
   color: #fff;
   font-size: 2em;
+  text-shadow: 1px 1px 4px #000000;
+  line-height: 125%;
 }
-  
-/*.hero p {
-  color: #fff;
-  font-size: 2em;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); 
+.hero a {
+  color: #a0d3e8;
 }
-*/
-.hero .row .columns {
+.hero a:hover {
+  color: #61b6d9;
+}
+
+.hero .columns {
     display: table-cell;
     vertical-align: middle;
 }
-
-.hero .row .columns,
-.hero .row [class*="column"] + [class*="column"]:last-child {
+.hero .columns,
+.hero [class*="column"] + [class*="column"]:last-child {
     float: none;
 }
