@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
 
 /* First slide styling */
 .hero {
-  background: no-repeat center center;/*url(images/hero-background.jpg) */
+  background: no-repeat center center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -52,16 +52,21 @@ h1,h2,h3,h4,h5,h6{font-family:'Cabin',sans-serif;}
 .hero p {
   color: #fff;
   font-size: 2em;
-  text-shadow: 1px 1px 4px #000000;
+  text-shadow: 2px 2px 4px #000000;
   line-height: 125%;
+  margin-top: 20%;
 }
-.hero a {
+@media only screen and (max-width: 30em) and (orientation: landscape) { 
+  .hero p {    
+    margin-top: 0;
+  }
+}
+.hero p a {
   color: #a0d3e8;
 }
-.hero a:hover {
+.hero p a:hover {
   color: #61b6d9;
 }
-
 .hero .columns {
     display: table-cell;
     vertical-align: middle;
